@@ -1,0 +1,16 @@
+{
+  "name": "packlegacy-description",
+  "version": "1.0.0",
+  "description": "Pack Legacy custom packaging category pages built with pure Node.js",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

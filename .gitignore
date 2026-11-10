@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+
+# Runtime data: customer quotes and uploaded artwork must never be committed
+storage/*
+!storage/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
