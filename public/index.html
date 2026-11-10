@@ -146,6 +146,18 @@
       <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/>
       <path d="M12.4 5.5c-3.6 0-5.4 2.6-5.4 4.8 0 1.3.5 2.5 1.6 2.9.2.1.3 0 .4-.2l.2-.6c0-.2 0-.3-.1-.4-.3-.4-.5-.9-.5-1.6 0-2.1 1.5-3.9 4-3.9 2.2 0 3.4 1.3 3.4 3.1 0 2.4-1 4.4-2.6 4.4-.9 0-1.5-.7-1.3-1.6.2-1 .7-2.2.7-2.9 0-.7-.4-1.2-1.1-1.2-.9 0-1.6.9-1.6 2.2 0 .8.3 1.3.3 1.3l-1.1 4.5c-.2.9-.1 2 0 2.6h.4c.3-.4 1-1.6 1.2-2.3l.5-1.8c.2.5 1 .9 1.8.9 2.4 0 4-2.2 4-5.1 0-2.2-1.9-4.3-4.8-4.3z" fill="#fff"/>
     </symbol>
+    <symbol id="icon-mail-fill" viewBox="0 0 24 24">
+      <path d="M2 5h20v14H2z" fill="currentColor"/><path d="m2.5 5.5 9.5 7.5 9.5-7.5" fill="none" stroke="#fff" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="icon-pin-fill" viewBox="0 0 24 24">
+      <path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-pinterest-p" viewBox="0 0 24 24">
+      <path d="M12.3 2C6.9 2 4 5.6 4 9.5c0 1.8 1 4.1 2.5 4.8.2.1.4.1.4-.2l.4-1.5c0-.2 0-.3-.1-.4-.5-.6-.9-1.7-.9-2.7 0-2.6 2-5.2 5.4-5.2 2.9 0 5 2 5 4.8 0 3.2-1.6 5.4-3.7 5.4-1.2 0-2-1-1.7-2.1.3-1.4 1-2.9 1-3.9 0-.9-.5-1.7-1.5-1.7-1.2 0-2.2 1.3-2.2 3 0 1.1.4 1.8.4 1.8L7.6 19.4c-.4 1.6 0 4 .1 4.2 0 .1.2.2.3 0 .1-.2 1.6-2.4 2-4l.8-2.9c.4.8 1.6 1.4 2.8 1.4 3.7 0 6.4-3.4 6.4-7.7C20 5.1 16.8 2 12.3 2z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M3.5 8.5h3.8V21H3.5zM5.4 2.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM9.6 8.5h3.6v1.7h.1c.5-1 1.8-2 3.6-2 3.9 0 4.6 2.5 4.6 5.8V21h-3.8v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9.6z" fill="currentColor"/>
+    </symbol>
     <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
     </symbol>
@@ -242,8 +254,9 @@
 
     <!--
       Top layout: 2 columns on desktop.
-      Hero + products on the left, sticky quote form on the right spanning both rows.
-      On mobile the order becomes: hero -> form -> products (see grid-template-areas).
+      Left column: hero, products, why choose, content blocks.
+      Right column: sticky quote form spanning all of them (stays in view until just above the materials).
+      On mobile the order becomes: hero -> form -> the rest (see grid-template-areas).
     -->
     <div class="container container--wide top-layout">
 
@@ -561,11 +574,10 @@
           </ul>
         </section>
 
-    </div>
 
-    <!-- ================= WHY CHOOSE US ================= -->
+        <!-- ================= WHY CHOOSE US ================= -->
     <section class="why" aria-labelledby="why-title">
-      <div class="container container--wide">
+      <div>
         <h2 class="why__title" id="why-title">Why Choose Pack Legacy For Custom Boxes?</h2>
         <p class="why__text">
           Pack Legacy is a leading custom box manufacturer and a top choice for brands to order custom boxes at
@@ -606,7 +618,7 @@
     </section>
 
     <!-- ================= SEO CONTENT ================= -->
-    <div class="container container--wide content">
+    <div class="content">
       <section class="content__block">
         <h2 class="content__title">Custom Printed Boxes For Retail, E-Commerce</h2>
         <p>
@@ -709,9 +721,11 @@
       </section>
     </div>
 
+    </div>
+
     <!-- ================= BOX OPTIONS (TABS) ================= -->
     <section class="options" aria-labelledby="options-title">
-      <div class="container container--options">
+      <div class="container container--wide">
         <h2 class="visually-hidden" id="options-title">Box Options</h2>
 
         <div class="tabs" data-tabs>
@@ -957,6 +971,7 @@
       </div>
     </section>
 
+
     <!-- ================= FAQ ================= -->
     <section class="faq" aria-labelledby="faq-title">
       <div class="container container--mid">
@@ -1012,7 +1027,7 @@
 
     <!-- ================= REVIEWS ================= -->
     <section class="reviews" aria-labelledby="reviews-title">
-      <div class="container container--mid">
+      <div class="container container--wide">
         <h2 class="section-head__title" id="reviews-title">Customer <span class="text-accent">Reviews</span></h2>
         <p class="section-head__text">Real feedback from clients who have experienced our services first hand.</p>
 
@@ -1028,19 +1043,29 @@
           </div>
 
           <figure class="review-card">
-            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <div class="review-card__top">
+              <span class="review-card__mark" aria-hidden="true">&ldquo;</span>
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            </div>
             <blockquote class="review-card__quote">
-              <p>"Great experience with PL. The communication was excellent, the service was smooth, and my order was shipped right on time. Highly Recommended!"</p>
+              <p>&ldquo;The perfume boxes I ordered had foiling and embossing that made my products feel luxurious. Worth every penny.&rdquo;</p>
             </blockquote>
-            <figcaption class="review-card__author">Clarke Wayne</figcaption>
+            <figcaption class="review-card__author">
+              <span class="review-card__avatar" aria-hidden="true">E</span>Emily Ron
+            </figcaption>
           </figure>
 
           <figure class="review-card">
-            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <div class="review-card__top">
+              <span class="review-card__mark" aria-hidden="true">&ldquo;</span>
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            </div>
             <blockquote class="review-card__quote">
-              <p>"Really happy with the custom boxes for my beauty brand form Pack Legacy. They look nice and the quality is good."</p>
+              <p>&ldquo;Excellent service from PL. Excellent communication and timely shipped.&rdquo;</p>
             </blockquote>
-            <figcaption class="review-card__author">Carrie Suda</figcaption>
+            <figcaption class="review-card__author">
+              <span class="review-card__avatar" aria-hidden="true">O</span>Olivia
+            </figcaption>
           </figure>
         </div>
       </div>
@@ -1061,28 +1086,28 @@
         </div>
 
         <ul class="insta__grid">
-          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Sage green luxury mailer box on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
-          <li><a href="#"><img src="images/products/black-mailer-box.webp" alt="Black mailer box with gold foil logo on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
-          <li><a href="#"><img src="images/products/printed-mailer-box.webp" alt="Green printed mailer box with insert card on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
-          <li><a href="#"><img src="images/products/window-mailer-box.webp" alt="White window mailer boxes on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
-          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Luxury mailer box with tissue paper on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Sage green luxury mailer box on Instagram" width="650" height="650" loading="lazy" decoding="async"><span class="insta__overlay" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span></a></li>
+          <li><a href="#"><img src="images/products/black-mailer-box.webp" alt="Black mailer box with gold foil logo on Instagram" width="650" height="650" loading="lazy" decoding="async"><span class="insta__overlay" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span></a></li>
+          <li><a href="#"><img src="images/products/printed-mailer-box.webp" alt="Green printed mailer box with insert card on Instagram" width="650" height="650" loading="lazy" decoding="async"><span class="insta__overlay" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span></a></li>
+          <li><a href="#"><img src="images/products/window-mailer-box.webp" alt="White window mailer boxes on Instagram" width="650" height="650" loading="lazy" decoding="async"><span class="insta__overlay" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span></a></li>
+          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Luxury mailer box with tissue paper on Instagram" width="650" height="650" loading="lazy" decoding="async"><span class="insta__overlay" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span></a></li>
         </ul>
       </div>
     </section>
 
     <!-- ================= CTA ================= -->
-    <section class="container container--mid cta-wrap">
+    <section class="container container--wide cta-wrap">
       <div class="cta">
         <div>
           <h2 class="cta__title">Can't Find the Right Custom Box?</h2>
           <p class="cta__text">
-            Need something specific? Fill out the form and our team will create a custom box solution that's made to fit
-            your product — perfectly.
+            Need something specific? Fill out the form and our team will create a custom box solution that's made to
+            fit your product perfectly.
           </p>
         </div>
         <div class="cta__actions">
-          <a class="btn" href="#quote-form">Get A Quote</a>
-          <a class="btn btn--outline" href="#">View All Blogs</a>
+          <a class="btn" href="#quote-form">Get a Quote</a>
+          <a class="btn btn--light" href="#">View All Blogs</a>
         </div>
       </div>
     </section>
@@ -1111,12 +1136,20 @@
 
       <div class="footer-main">
         <div class="footer-contact">
-          <ul>
-            <li class="no-icon"><a href="mailto:sales@packlegacy.com">sales@packlegacy.com</a></li>
+          <ul class="footer-contact__list">
+            <li><svg aria-hidden="true"><use href="#icon-mail-fill"/></svg><a href="mailto:sales@packlegacy.com">sales@packlegacy.com</a></li>
             <li><svg aria-hidden="true"><use href="#icon-phone"/></svg><a href="tel:+14243216460">+1 (424) 321-6460</a></li>
-            <li class="no-icon"><address>520 Vetterlein Ave Hamilton Township,<br>NJ 08619, USA</address></li>
+            <li><svg aria-hidden="true"><use href="#icon-pin-fill"/></svg><address>520 Vetterlein Ave Hamilton<br>Township, NJ 08619, USA</address></li>
           </ul>
-          <p class="footer-contact__follow">Follow us:</p>
+          <div class="footer-contact__follow">
+            <p>Follow us:</p>
+            <ul class="footer-social">
+              <li><a href="#" aria-label="Pack Legacy on Facebook"><svg aria-hidden="true"><use href="#icon-facebook"/></svg></a></li>
+              <li><a href="#" aria-label="Pack Legacy on Pinterest"><svg aria-hidden="true"><use href="#icon-pinterest-p"/></svg></a></li>
+              <li><a href="#" aria-label="Pack Legacy on LinkedIn"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg></a></li>
+              <li><a href="#" aria-label="Pack Legacy on Instagram"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a></li>
+            </ul>
+          </div>
         </div>
 
         <nav class="footer-col" aria-labelledby="footer-company">
