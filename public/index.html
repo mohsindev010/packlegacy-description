@@ -188,7 +188,7 @@
 
     <!-- Topbar: announcement slider + contact info -->
     <div class="topbar">
-      <div class="container topbar__inner">
+      <div class="container container--wide topbar__inner">
         <div class="topbar__announce" aria-live="polite">
           <button class="topbar__arrow" type="button" data-announce="prev" aria-label="Previous announcement">&#8249;</button>
           <p class="topbar__text" data-announce-text>No Minimum Order Quantity</p>
@@ -214,7 +214,7 @@
 
     <!-- Logo + search -->
     <div class="header-main">
-      <div class="container header-main__inner">
+      <div class="container container--wide header-main__inner">
         <a href="/" class="logo" aria-label="Pack Legacy home">
           <img src="images/logos/Pack-legacy-Logo-1024x216.webp" alt="Pack Legacy" width="220" height="46">
         </a>
@@ -224,9 +224,12 @@
           <input id="search-input" class="search__input" type="search" name="q" placeholder="Search products...">
         </form>
 
-        <a class="header-main__social" href="#" aria-label="Pack Legacy on Pinterest">
-          <svg aria-hidden="true"><use href="#icon-pinterest"/></svg>
-        </a>
+        <ul class="header-social">
+          <li><a href="#" aria-label="Pack Legacy on Facebook"><svg aria-hidden="true"><use href="#icon-facebook"/></svg></a></li>
+          <li><a href="#" aria-label="Pack Legacy on Instagram"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a></li>
+          <li><a href="#" aria-label="Pack Legacy on Pinterest"><svg aria-hidden="true"><use href="#icon-pinterest-p"/></svg></a></li>
+          <li><a href="#" aria-label="Pack Legacy on LinkedIn"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg></a></li>
+        </ul>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
           <span></span><span></span><span></span>
@@ -236,7 +239,7 @@
 
     <!-- Primary navigation -->
     <nav class="nav" id="primary-nav" aria-label="Primary">
-      <div class="container nav__inner">
+      <div class="container container--wide nav__inner">
         <ul class="nav__list">
           <li><a class="nav__link" href="/">Home</a></li>
           <li><a class="nav__link nav__link--dropdown" href="#">Explore Industries</a></li>

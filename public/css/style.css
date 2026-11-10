@@ -135,8 +135,7 @@ button { font: inherit; cursor: pointer; }
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  height: 66px;
-  padding-top: 8px;
+  height: 44px;
 }
 
 .topbar__announce {
@@ -188,15 +187,15 @@ button { font: inherit; cursor: pointer; }
 .header-main__inner {
   display: flex;
   align-items: center;
-  height: 82px;
-  padding-left: 73px;
+  gap: 32px;
+  height: 70px;
 }
 
 .logo img { width: 217px; height: auto; }
 
 .search {
   flex: 0 1 557px;
-  margin-left: 87px;
+  margin-inline: auto;
 }
 
 .search__input {
@@ -217,15 +216,21 @@ button { font: inherit; cursor: pointer; }
   border-color: var(--color-accent);
 }
 
-.header-main__social {
-  display: grid;
-  place-items: center;
-  margin-left: auto;
-  margin-right: 57px;
-  color: #222;
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.header-main__social svg { width: 17px; height: 17px; }
+.header-social a {
+  display: grid;
+  place-items: center;
+  color: var(--color-text);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.header-social a:hover { color: var(--color-accent); transform: translateY(-2px); }
+.header-social svg { width: 19px; height: 19px; }
 
 /* Hamburger (mobile only) */
 .nav-toggle {
@@ -256,22 +261,21 @@ button { font: inherit; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 82px;
+  height: 56px;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 33px;
-  padding-left: 16px;
+  gap: 36px;
 }
 
 .nav__link {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   transition: color var(--transition);
 }
 
@@ -282,7 +286,7 @@ button { font: inherit; cursor: pointer; }
   width: 6px;
   height: 6px;
   border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
+  border-bottom: 2px solid currentColor;
   transform: translateY(-2px) rotate(45deg);
 }
 
@@ -308,7 +312,7 @@ button { font: inherit; cursor: pointer; }
     "why      aside"
     "content  aside";
   column-gap: 64px;
-  padding-top: 56px;
+  padding-top: 28px;
 }
 
 .hero { grid-area: hero; }
@@ -321,7 +325,7 @@ button { font: inherit; cursor: pointer; }
   align-self: start;
   position: sticky;
   top: 20px;
-  margin-top: -6px;
+  margin-top: 0;
 }
 
 /* ==========================================================================
@@ -877,17 +881,17 @@ button { font: inherit; cursor: pointer; }
    10. SEO content blocks
    ========================================================================== */
 .content {
-  padding-top: 52px;
+  padding-top: 36px;
   font-family: var(--font-display);
 }
 
 .content__block {
   max-width: 1140px;
-  margin-bottom: 40px;
-  padding-bottom: 28px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #e6e6e6;
   font-size: 13px;
-  line-height: 29px;
+  line-height: 24px;
 }
 
 .content__block--last {
@@ -897,14 +901,14 @@ button { font: inherit; cursor: pointer; }
 }
 
 .content__title {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-content-title);
 }
 
-.content__block p + p { margin-top: 12px; }
+.content__block p + p { margin-top: 8px; }
 
 .content__list {
   margin-top: 6px;
@@ -912,7 +916,7 @@ button { font: inherit; cursor: pointer; }
   list-style: disc;
 }
 
-.content__list li { margin-top: 6px; }
+.content__list li { margin-top: 4px; }
 .content__list li::marker { color: var(--color-text-muted); }
 
 /* ==========================================================================
@@ -1221,6 +1225,20 @@ button { font: inherit; cursor: pointer; }
 .rating-card .logo-bark { width: 72px; height: 26px; }
 .rating-card .logo-trustpilot { width: 54px; height: 27px; }
 
+.rating-card,
+.review-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.rating-card:hover,
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rating-card:hover { border-color: var(--color-accent); }
+.review-card:hover { background-color: #e7eedd; }
+
 /* Testimonial cards */
 .review-card {
   display: flex;
@@ -1276,7 +1294,10 @@ button { font: inherit; cursor: pointer; }
   color: #fff;
   font-size: 13px;
   font-weight: 600;
+  transition: transform 0.25s ease;
 }
+
+.review-card:hover .review-card__avatar { transform: scale(1.12); }
 
 /* ==========================================================================
    14. Instagram
@@ -1603,12 +1624,13 @@ button { font: inherit; cursor: pointer; }
   .header-main__inner {
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: space-between;
     height: auto;
-    padding: 12px 0;
+    padding-block: 12px;
   }
 
   .logo img { width: 160px; }
-  .header-main__social { display: none; }
+  .header-social { display: none; }
   .nav-toggle { display: flex; }
   .search { order: 3; flex-basis: 100%; margin-left: 0; }
 
@@ -1662,7 +1684,7 @@ button { font: inherit; cursor: pointer; }
   .feature__title { margin-top: 14px; font-size: 16px; }
 
   .content { padding-top: 56px; }
-  .content__block { margin-bottom: 32px; padding-bottom: 24px; }
+  .content__block { margin-bottom: 18px; padding-bottom: 14px; }
   .options { padding-top: 64px; }
 
   .faq__grid { grid-template-columns: minmax(0, 1fr); }
