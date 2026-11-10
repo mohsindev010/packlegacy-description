@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="White cardboard sheet with paper texture swatch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3"/><stop offset="1" stop-color="#d6d9de"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#fafaf8"/><stop offset="1" stop-color="#e6e6e3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".18"/>
+    </filter>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .22 0"/>
+    </filter>
+    <clipPath id="swatch"><circle cx="335" cy="185" r="50"/></clipPath>
+  </defs>
+
+  <rect width="400" height="250" fill="url(#bg)"/>
+
+  <!-- board: top face + two cut edges -->
+  <g filter="url(#shadow)">
+    <path d="M20 160 270 25h130v100L150 215z" fill="url(#top)"/>
+    <path d="M20 160l130 55v10L20 170z" fill="#dad8d2"/>
+    <path d="M150 215l250-90v10l-250 90z" fill="#e7e5e0"/>
+  </g>
+
+  <!-- texture swatch -->
+  <circle cx="335" cy="185" r="54" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#swatch)">
+    <rect x="285" y="135" width="100" height="100" fill="#f7f7f5"/>
+    <rect x="285" y="135" width="100" height="100" filter="url(#noise)"/>
+  </g>
+</svg>

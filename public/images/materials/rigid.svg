@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="Thick rigid board with grey chipboard core swatch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3"/><stop offset="1" stop-color="#d6d9de"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8f7f4"/><stop offset="1" stop-color="#e5e3de"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".2"/>
+    </filter>
+    <filter id="speckle">
+      <feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 .2  0 0 0 0 .18  0 0 0 0 .15  0 0 0 .5 0"/>
+    </filter>
+    <clipPath id="swatch"><circle cx="335" cy="185" r="50"/></clipPath>
+    <clipPath id="edges"><path d="M20 160l130 55v22L20 182zM150 215l250-90v22l-250 90z"/></clipPath>
+  </defs>
+
+  <rect width="400" height="250" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <path d="M20 160 270 25h130v100L150 215z" fill="url(#top)"/>
+    <!-- thick grey chipboard edges with a thin white liner on top -->
+    <path d="M20 160l130 55v22L20 182z" fill="#b5ad9f"/>
+    <path d="M150 215l250-90v22l-250 90z" fill="#c4bdb0"/>
+    <rect width="400" height="250" filter="url(#speckle)" clip-path="url(#edges)" opacity=".6"/>
+    <path d="M20 161.5l130 55 250-90" fill="none" stroke="#fbfaf7" stroke-width="3"/>
+  </g>
+
+  <circle cx="335" cy="185" r="54" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#swatch)">
+    <rect x="285" y="135" width="100" height="40" fill="#f6f5f1"/>
+    <rect x="285" y="175" width="100" height="60" fill="#b9b1a3"/>
+    <rect x="285" y="175" width="100" height="60" filter="url(#speckle)"/>
+    <rect x="285" y="173" width="100" height="3" fill="#e2ded6"/>
+  </g>
+</svg>

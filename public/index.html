@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Mailer Boxes | Pack Legacy</title>
+  <meta name="description" content="Custom printed mailer boxes with no minimum order quantity, free design support and fast turnaround. Get a free quote from Pack Legacy.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- SVG icon sprite: each icon is defined once and reused with <use href="#id"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="M12 3 2 8l10 5 10-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="m2 12 10 5 10-5M2 16l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24">
+      <path d="M2 6h12v10H2zM14 9h4l3 3v4h-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="6" cy="17.5" r="1.8" fill="currentColor"/><circle cx="17" cy="17.5" r="1.8" fill="currentColor"/>
+    </symbol>
+
+    <!-- "Why Choose" feature icons (48x48 line icons; #e8f5ee = circle background, used as a cut-out) -->
+    <symbol id="icon-no-minimum" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 18l12 6 12-6M6 18v14l12 6 12-6V18M18 24v14"/>
+      <path d="M6 18 2 12l12-6 4 6M30 18l4-6-12-6-4 6"/>
+      <circle cx="35" cy="34" r="8.5" fill="currentColor" stroke="none"/>
+      <text x="35" y="37.5" font-size="9" font-family="Poppins, sans-serif" font-weight="700" fill="#fff" stroke="none" text-anchor="middle">1+</text>
+    </symbol>
+
+    <symbol id="icon-sustainable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 19l8-4 8 4v9l-8 4-8-4zM14 19l8 4 8-4M22 23v9"/>
+      <path d="M40 17A18 18 0 0 0 9 11M9 5v6h6"/>
+      <path d="M6 28a18 18 0 0 0 17 15"/>
+      <path d="M29 43c0-8 5-13 14-13 0 9-5 13-14 13zM29 43l8-7" fill="#e8f5ee"/>
+    </symbol>
+
+    <symbol id="icon-customizable" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 18l12-6 12 6v14l-12 6-12-6zM3 18l12 6 12-6M15 24v14"/>
+      <path d="M31 10v30M37 10v30M43 10v30"/>
+      <circle cx="31" cy="30" r="2.6" fill="currentColor"/>
+      <circle cx="37" cy="18" r="2.6" fill="currentColor"/>
+      <circle cx="43" cy="26" r="2.6" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="icon-fast" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 16l12-6 12 6v14l-12 6-12-6zM14 16l12 6 12-6M26 22v14"/>
+      <path d="M2 20h8M4 26h7M2 32h8"/>
+      <circle cx="37" cy="36" r="8" fill="#e8f5ee"/>
+      <path d="M37 32v4l3 2M35 26h4"/>
+    </symbol>
+
+    <symbol id="icon-design" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 6h12v10h10v12H28v12H16V28H6V16h10z" stroke-dasharray="3 3"/>
+      <path d="M24 42l14-14 4 4-14 14h-4zM34 31l4 4" fill="#e8f5ee"/>
+      <path d="M41 4v7M37.5 7.5h7"/>
+    </symbol>
+
+    <symbol id="icon-chat" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h24v15H14l-6 5v-5H4z"/>
+      <circle cx="10" cy="14.5" r="1.4" fill="currentColor"/>
+      <circle cx="16" cy="14.5" r="1.4" fill="currentColor"/>
+      <circle cx="22" cy="14.5" r="1.4" fill="currentColor"/>
+      <path d="M20 25h24v14h-4v5l-6-5H20z" fill="#e8f5ee"/>
+      <path d="M33 28l-4 6h5l-3 6"/>
+    </symbol>
+
+    <symbol id="icon-reorder" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 20l8-4 8 4v9l-8 4-8-4zM16 20l8 4 8-4M24 24v9"/>
+      <path d="M40 24a16 16 0 0 1-27.3 11.3M8 24a16 16 0 0 1 27.3-11.3"/>
+      <path d="M35.3 6v6.7h-6.7M12.7 42v-6.7h6.7"/>
+    </symbol>
+
+    <!-- Small UI icons (24x24 line icons) -->
+    <symbol id="icon-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 4C11 4 5 9 5 18c0 .7 0 1.3.1 2C14 20 20 14 20 4zM4 20l9-9"/>
+    </symbol>
+    <symbol id="icon-printer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 9V3h10v6M7 17H4v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6h-3M7 14h10v7H7z"/>
+    </symbol>
+    <symbol id="icon-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="6" rx="7" ry="3"/>
+      <path d="M5 6v4c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 10v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4M5 14v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>
+    </symbol>
+    <symbol id="icon-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>
+      <path d="M8.5 12l2.5 2.5 4.5-5"/>
+    </symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2l9 5v10l-9 5-9-5V7zM3 7l9 5 9-5M12 12v10"/>
+    </symbol>
+    <symbol id="icon-diamond" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3h12l4 6-10 12L2 9zM2 9h20M9 3 8 9l4 12 4-12-1-6"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3l-5.5 2.9 1-6.2L3 9.6l6.2-.9z"/>
+    </symbol>
+    <symbol id="icon-recycle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 19H4.8a1.8 1.8 0 0 1-1.6-2.7L7.2 9.5M11 19h8.2a1.8 1.8 0 0 0 1.6-2.7l-1.2-2.1M14 16l-3 3 3 3M8.3 13.6 7.2 9.5l-4.1 1.1M9.3 5.8l1.1-1.9a1.8 1.8 0 0 1 3.1 0l4 6.8M13.4 9.6l4.1 1.1 1.1-4.1"/>
+    </symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 4l1.8 5.2L18 11l-5.2 1.8L11 18l-1.8-5.2L4 11l5.2-1.8zM19 3v4M17 5h4"/>
+    </symbol>
+    <symbol id="icon-crown" viewBox="0 0 24 24">
+      <path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 10H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M14 8.8V7c0-.8.4-1.2 1.3-1.2H17V2.2A23 23 0 0 0 14.6 2C12 2 10.3 3.6 10.3 6.5v2.3H7.5v3.7h2.8V22H14v-9.5h2.8l.5-3.7z" fill="currentColor"/>
+    </symbol>
+    <!-- Review platform marks (drawn approximations; swap for official SVGs if provided) -->
+    <symbol id="logo-clutch" viewBox="0 0 112 36">
+      <text x="0" y="29" font-family="Poppins, sans-serif" font-size="33" font-weight="600" fill="#17313b" letter-spacing="-1">Clutch</text>
+      <circle cx="80.5" cy="18.5" r="3.6" fill="#ef4335"/>
+    </symbol>
+    <symbol id="logo-bark" viewBox="0 0 112 36">
+      <path d="M14 6 3 15l11 9M14 13l-7 5 7 5M14 20l-3 2 3 2" fill="none" stroke="#1d2f3f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 3)"/>
+      <text x="22" y="30" font-family="Poppins, sans-serif" font-size="36" font-weight="600" fill="#1d2f3f" letter-spacing="-1">bark</text>
+    </symbol>
+    <symbol id="logo-trustpilot" viewBox="0 0 80 40">
+      <path d="M8 1.5l2 6h6.3l-5.1 3.7 2 6-5.2-3.7-5.1 3.7 2-6L-.1 7.5h6.3z" fill="#00b67a" transform="translate(2 0)"/>
+      <text x="20" y="15" font-family="Arial, sans-serif" font-size="13" fill="#191919">Trustpilot</text>
+      <g fill="#00b67a"><rect x="5" y="22" width="13" height="13"/><rect x="19.5" y="22" width="13" height="13"/><rect x="34" y="22" width="13" height="13"/><rect x="48.5" y="22" width="13" height="13"/><rect x="63" y="22" width="13" height="13" fill="#dcdce6"/><rect x="63" y="22" width="9" height="13"/></g>
+      <g fill="#fff"><path id="tps" d="M11.5 24.5l1.1 3.3h3.4l-2.8 2 1.1 3.3-2.8-2-2.8 2 1.1-3.3-2.8-2h3.4z"/><use href="#tps" x="14.5"/><use href="#tps" x="29"/><use href="#tps" x="43.5"/><use href="#tps" x="58"/></g>
+    </symbol>
+
+    <symbol id="icon-pinterest" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor"/>
+      <path d="M12.4 5.5c-3.6 0-5.4 2.6-5.4 4.8 0 1.3.5 2.5 1.6 2.9.2.1.3 0 .4-.2l.2-.6c0-.2 0-.3-.1-.4-.3-.4-.5-.9-.5-1.6 0-2.1 1.5-3.9 4-3.9 2.2 0 3.4 1.3 3.4 3.1 0 2.4-1 4.4-2.6 4.4-.9 0-1.5-.7-1.3-1.6.2-1 .7-2.2.7-2.9 0-.7-.4-1.2-1.1-1.2-.9 0-1.6.9-1.6 2.2 0 .8.3 1.3.3 1.3l-1.1 4.5c-.2.9-.1 2 0 2.6h.4c.3-.4 1-1.6 1.2-2.3l.5-1.8c.2.5 1 .9 1.8.9 2.4 0 4-2.2 4-5.1 0-2.2-1.9-4.3-4.8-4.3z" fill="#fff"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <!-- Simplified AI assistant marks for "What AI says about us" (replace with official SVGs if available) -->
+    <symbol id="ai-chatgpt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <ellipse cx="12" cy="12" rx="4" ry="9"/><ellipse cx="12" cy="12" rx="4" ry="9" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="4" ry="9" transform="rotate(120 12 12)"/>
+    </symbol>
+    <symbol id="ai-perplexity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M12 2v20M4 3l8 7 8-7v7H4zM4 10v8l8-5 8 5v-8M8 21v-6M16 21v-6"/>
+    </symbol>
+    <symbol id="ai-gemini" viewBox="0 0 24 24">
+      <path d="M12 2c.9 5.4 4.6 9.1 10 10-5.4.9-9.1 4.6-10 10-.9-5.4-4.6-9.1-10-10 5.4-.9 9.1-4.6 10-10z" fill="currentColor"/>
+    </symbol>
+    <symbol id="ai-brave" viewBox="0 0 24 24">
+      <path d="M12 2l9 3v7c0 5.3-3.8 8.9-9 10-5.2-1.1-9-4.7-9-10V5z" fill="currentColor"/>
+    </symbol>
+    <symbol id="ai-bing" viewBox="0 0 24 24">
+      <path d="M6 2l4.2 1.5v12.2l5.2-3-2.4-1.2-1.4-3.5 7.4 2.6v4.5L10.2 21 6 18.6z" fill="currentColor"/>
+    </symbol>
+    <symbol id="ai-grok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="12" cy="13" r="7"/><path d="M9 3l1 2M12 2v2.5M15 3l-1 2M9.5 12h.01M14.5 12h.01M9.5 15.5c1.4 1 3.6 1 5 0"/>
+    </symbol>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <!-- Topbar: announcement slider + contact info -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__announce" aria-live="polite">
+          <button class="topbar__arrow" type="button" data-announce="prev" aria-label="Previous announcement">&#8249;</button>
+          <p class="topbar__text" data-announce-text>No Minimum Order Quantity</p>
+          <button class="topbar__arrow" type="button" data-announce="next" aria-label="Next announcement">&#8250;</button>
+        </div>
+
+        <ul class="topbar__contact">
+          <li>
+            <a href="mailto:sales@packlegacy.com">
+              <svg class="icon topbar__mail" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2z" fill="currentColor"/><path d="m2.5 5.5 9.5 7.5 9.5-7.5" fill="none" stroke="#fff" stroke-width="1.6"/></svg>
+              sales@packlegacy.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+14243216460">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+              +1 (424) 321-6460
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Logo + search -->
+    <div class="header-main">
+      <div class="container header-main__inner">
+        <a href="/" class="logo" aria-label="Pack Legacy home">
+          <img src="images/logos/Pack-legacy-Logo-1024x216.webp" alt="Pack Legacy" width="220" height="46">
+        </a>
+
+        <form class="search" role="search" action="/search" method="get">
+          <label for="search-input" class="visually-hidden">Search products</label>
+          <input id="search-input" class="search__input" type="search" name="q" placeholder="Search products...">
+        </form>
+
+        <a class="header-main__social" href="#" aria-label="Pack Legacy on Pinterest">
+          <svg aria-hidden="true"><use href="#icon-pinterest"/></svg>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Primary navigation -->
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <div class="container nav__inner">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="/">Home</a></li>
+          <li><a class="nav__link nav__link--dropdown" href="#">Explore Industries</a></li>
+          <li><a class="nav__link nav__link--dropdown" href="#">Custom Boxes</a></li>
+          <li><a class="nav__link nav__link--dropdown" href="#">Box By Styles</a></li>
+          <li><a class="nav__link nav__link--dropdown" href="#">Resources</a></li>
+          <li><a class="nav__link" href="#">About Us</a></li>
+        </ul>
+        <a class="btn nav__quote" href="#quote-form">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--
+      Top layout: 2 columns on desktop.
+      Hero + products on the left, sticky quote form on the right spanning both rows.
+      On mobile the order becomes: hero -> form -> products (see grid-template-areas).
+    -->
+    <div class="container container--wide top-layout">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li aria-current="page">Custom Mailer boxes</li>
+            </ol>
+          </nav>
+
+          <h1 class="hero__title">Custom Mailer Boxes</h1>
+
+          <p class="hero__text">
+            Impress customers and enhance the unboxing experience with custom boxes for every product type.
+            Design custom boxes to match your product's unique needs, and print them with your brand logo
+            and essential information.
+          </p>
+
+          <p class="hero__note">
+            Request a custom quote for your custom printed boxes and bring your packaging ideas to life
+            with designs tailored to your products and brand.
+          </p>
+
+          <a class="btn hero__cta" href="#quote-form">
+            Get A Quote
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <!-- Trust row -->
+          <div class="trust">
+            <div class="trust__rating">
+              <p class="trust__score">5.0 <span class="stars" aria-label="5 out of 5 stars">★★★★★</span></p>
+              <p class="trust__label">Verified Customer Reviews</p>
+            </div>
+            <ul class="trust__logos">
+              <li><svg class="logo-clutch" aria-label="Clutch" role="img"><use href="#logo-clutch"/></svg></li>
+              <li><svg class="logo-bark" aria-label="bark" role="img"><use href="#logo-bark"/></svg></li>
+              <li><svg class="logo-trustpilot" aria-label="Trustpilot" role="img"><use href="#logo-trustpilot"/></svg></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ================= QUOTE FORM ================= -->
+        <aside class="top-layout__aside" id="quote-form">
+          <form class="quote" action="/api/quote" method="post" enctype="multipart/form-data" novalidate data-quote-form>
+            <h2 class="quote__title">Fill Out The Quote Form</h2>
+
+            <div class="quote__intro">
+              <div>
+                <p class="quote__subtitle">
+                  Let's create your box.
+                  <span class="info" title="Fill in your box details and we'll send a free quote within 24 hours." aria-hidden="true">i</span>
+                </p>
+                <p class="quote__question" id="design-method-label">How would you like to design your box?</p>
+              </div>
+
+              <div class="quote__price">
+                <span class="quote__stock">Instock</span>
+                <div>
+                  <span class="quote__price-label">Starting From</span>
+                  <span class="quote__price-value">$1.05<small>Est</small></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design method: radio buttons styled as cards -->
+            <fieldset class="design-options" aria-labelledby="design-method-label">
+              <label class="design-option">
+                <input type="radio" name="designMethod" value="design-tool" checked>
+                <span class="design-option__card">
+                  <svg class="design-option__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18 24 10l16 8v18L24 44 8 36z" fill="#e8f5ee" stroke="#0e8a4f" stroke-width="2" stroke-linejoin="round"/><path d="M8 18l16 8 16-8M24 26v18" fill="none" stroke="#0e8a4f" stroke-width="2"/><path d="m30 4 6 6-10 10h-6v-6z" fill="#fff" stroke="#f04438" stroke-width="2" stroke-linejoin="round"/></svg>
+                  Design Tool
+                </span>
+              </label>
+
+              <label class="design-option">
+                <input type="radio" name="designMethod" value="pre-made">
+                <span class="design-option__card">
+                  <svg class="design-option__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="26" rx="3" fill="#e8f5ee" stroke="#0e8a4f" stroke-width="2"/><path d="m10 32 9-10 7 7 4-4 8 7" fill="none" stroke="#0e8a4f" stroke-width="2" stroke-linejoin="round"/><circle cx="31" cy="18" r="3" fill="#0e8a4f"/><path d="m30 30 12 4-5 2-2 5z" fill="#f04438"/></svg>
+                  Browse Our Pre-made Designs
+                </span>
+              </label>
+
+              <label class="design-option">
+                <input type="radio" name="designMethod" value="upload">
+                <span class="design-option__card">
+                  <svg class="design-option__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l8 8v28H12z" fill="#fff" stroke="#0e8a4f" stroke-width="2" stroke-linejoin="round"/><path d="M30 6v8h8" fill="none" stroke="#0e8a4f" stroke-width="2"/><path d="M25 36V20m-6 6 6-6 6 6" fill="none" stroke="#0e8a4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="30" width="14" height="9" rx="2" fill="#f04438"/><text x="11" y="37" font-size="6" font-family="sans-serif" font-weight="700" fill="#fff" text-anchor="middle">PDF</text></svg>
+                  Upload PDF File
+                </span>
+              </label>
+            </fieldset>
+
+            <!-- Shown only when "Upload PDF File" is selected -->
+            <div class="field field--full" data-upload-field hidden>
+              <label for="artwork">Artwork File (PDF, max 10 MB)</label>
+              <input id="artwork" name="artwork" type="file" accept="application/pdf,.pdf" aria-describedby="artwork-error">
+              <p class="field__error" id="artwork-error"></p>
+            </div>
+
+            <div class="quote__grid">
+              <div class="field field--half">
+                <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                <input id="fullName" name="fullName" type="text" placeholder="Full Name" autocomplete="name" required aria-describedby="fullName-error">
+                <p class="field__error" id="fullName-error"></p>
+              </div>
+
+              <div class="field field--half">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" placeholder="Email Address" autocomplete="email" required aria-describedby="email-error">
+                <p class="field__error" id="email-error"></p>
+              </div>
+
+              <div class="field field--half">
+                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input id="phone" name="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required aria-describedby="phone-error">
+                <p class="field__error" id="phone-error"></p>
+              </div>
+
+              <div class="field field--half">
+                <label for="material">Material Options</label>
+                <input id="material" name="material" type="text" placeholder="Material Options" list="material-list">
+                <datalist id="material-list">
+                  <option value="Cardboard">
+                  <option value="Corrugated Cardboard">
+                  <option value="Rigid Stock">
+                  <option value="Kraft Stock">
+                </datalist>
+              </div>
+
+              <div class="field field--qty">
+                <label for="quantity">Quantity <span aria-hidden="true">*</span></label>
+                <select id="quantity" name="quantity" required aria-describedby="quantity-error">
+                  <option value="" selected disabled>Select quantity</option>
+                  <option>50 - 100</option>
+                  <option>100 - 250</option>
+                  <option>250 - 500</option>
+                  <option>500 - 1,000</option>
+                  <option>1,000 - 5,000</option>
+                  <option>5,000+</option>
+                </select>
+                <p class="field__error" id="quantity-error"></p>
+              </div>
+
+              <div class="field field--third">
+                <label for="source">How did you find us?</label>
+                <select id="source" name="source">
+                  <option value="" selected>Choose an option</option>
+                  <option>Google Search</option>
+                  <option>Social Media</option>
+                  <option>Referral</option>
+                  <option>Clutch / bark / Trustpilot</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="field field--third">
+                <label for="finishes">Special Finishes</label>
+                <select id="finishes" name="finishes">
+                  <option value="" selected>Choose an option</option>
+                  <option>Matte Lamination</option>
+                  <option>Gloss Lamination</option>
+                  <option>Spot UV</option>
+                  <option>Foil Stamping</option>
+                  <option>Embossing / Debossing</option>
+                </select>
+              </div>
+
+              <div class="field field--quarter">
+                <label for="length">Length <span aria-hidden="true">*</span></label>
+                <input id="length" name="length" type="number" min="0.1" step="any" inputmode="decimal" placeholder="Length" required aria-describedby="length-error">
+                <p class="field__error" id="length-error"></p>
+              </div>
+
+              <div class="field field--quarter">
+                <label for="width">Width <span aria-hidden="true">*</span></label>
+                <input id="width" name="width" type="number" min="0.1" step="any" inputmode="decimal" placeholder="Width" required aria-describedby="width-error">
+                <p class="field__error" id="width-error"></p>
+              </div>
+
+              <div class="field field--quarter">
+                <label for="height">Height <span aria-hidden="true">*</span></label>
+                <input id="height" name="height" type="number" min="0.1" step="any" inputmode="decimal" placeholder="Height" required aria-describedby="height-error">
+                <p class="field__error" id="height-error"></p>
+              </div>
+
+              <div class="field field--quarter">
+                <label for="unit">Unit <span aria-hidden="true">*</span></label>
+                <select id="unit" name="unit" required>
+                  <option value="in" selected>inches</option>
+                  <option value="cm">cm</option>
+                  <option value="mm">mm</option>
+                </select>
+              </div>
+
+              <div class="field field--full">
+                <label for="details">Project Details / Special Instructions</label>
+                <textarea id="details" name="details" rows="3" maxlength="1000" placeholder="Tell us about your product, finish, and ideal delivery date..."></textarea>
+              </div>
+            </div>
+
+            <button class="btn quote__submit" type="submit">Get My Quote</button>
+            <p class="quote__status" role="status" data-quote-status></p>
+
+            <p class="quote__badge">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-14.3 4.9M4 12a8 8 0 0 1 14.3-4.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 3v4.2h-4.2M5.5 21v-4.2h4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 10 12 8l3.5 2v4L12 16l-3.5-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              No Minimum Quantity
+            </p>
+          </form>
+        </aside>
+
+        <!-- ================= PRODUCTS ================= -->
+        <section class="products" aria-labelledby="products-title">
+          <div class="section-head">
+            <div>
+              <h2 class="section-head__title" id="products-title">Custom Boxes &amp; Packaging</h2>
+              <p class="section-head__text">
+                Explore our custom packaging box solutions designed to meet every industry's unique demands.
+              </p>
+            </div>
+            <a class="btn products__more" href="#">Explore More</a>
+          </div>
+
+          <ul class="product-grid">
+            <li>
+              <article class="product-card">
+                <img class="product-card__img" src="images/products/black-mailer-box.webp"
+                     alt="Matte black custom mailer box with gold foil logo" width="650" height="650" loading="lazy" decoding="async">
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <h3 class="product-card__title"><a href="#">Book Boxes</a></h3>
+                    <span class="badge">Instock</span>
+                  </div>
+                  <p class="product-card__price">Starting at <strong>$2.00</strong> each</p>
+                  <ul class="product-card__tags">
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>No MOQ</li>
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Free Shipping</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product-card">
+                <img class="product-card__img" src="images/products/printed-mailer-box.webp"
+                     alt="Green printed mailer box with custom inside print and insert card" width="650" height="650" loading="lazy" decoding="async">
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <h3 class="product-card__title"><a href="#">Book Boxes</a></h3>
+                    <span class="badge">Instock</span>
+                  </div>
+                  <p class="product-card__price">Starting at <strong>$2.00</strong> each</p>
+                  <ul class="product-card__tags">
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>No MOQ</li>
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Free Shipping</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product-card">
+                <img class="product-card__img" src="images/products/luxury-mailer-box.webp"
+                     alt="Sage green luxury mailer box with tissue paper and printed lid message" width="650" height="650" loading="lazy" decoding="async">
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <h3 class="product-card__title"><a href="#">Book Boxes</a></h3>
+                    <span class="badge">Instock</span>
+                  </div>
+                  <p class="product-card__price">Starting at <strong>$2.00</strong> each</p>
+                  <ul class="product-card__tags">
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>No MOQ</li>
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Free Shipping</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product-card">
+                <img class="product-card__img" src="images/products/window-mailer-box.webp"
+                     alt="White mailer boxes with die-cut windows" width="650" height="650" loading="lazy" decoding="async">
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <h3 class="product-card__title"><a href="#">Book Boxes</a></h3>
+                    <span class="badge">Instock</span>
+                  </div>
+                  <p class="product-card__price">Starting at <strong>$2.00</strong> each</p>
+                  <ul class="product-card__tags">
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>No MOQ</li>
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Free Shipping</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="product-card">
+                <img class="product-card__img" src="images/products/black-mailer-box.webp"
+                     alt="Black corrugated shipping mailer box, open and closed" width="650" height="650" loading="lazy" decoding="async">
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <h3 class="product-card__title"><a href="#">Book Boxes</a></h3>
+                    <span class="badge">Instock</span>
+                  </div>
+                  <p class="product-card__price">Starting at <strong>$2.00</strong> each</p>
+                  <ul class="product-card__tags">
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>No MOQ</li>
+                    <li class="tag"><svg class="tag__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Free Shipping</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+    </div>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why" aria-labelledby="why-title">
+      <div class="container container--wide">
+        <h2 class="why__title" id="why-title">Why Choose Pack Legacy For Custom Boxes?</h2>
+        <p class="why__text">
+          Pack Legacy is a leading custom box manufacturer and a top choice for brands to order custom boxes at
+          wholesale rates. Choosing us as your packaging partner gives you various benefits, such as:
+        </p>
+
+        <ul class="features">
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-no-minimum"/></svg></span>
+            <h3 class="feature__title">No<br>Minimums</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-sustainable"/></svg></span>
+            <h3 class="feature__title">Sustainable<br>Options</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-customizable"/></svg></span>
+            <h3 class="feature__title">Fully<br>Customizable</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-fast"/></svg></span>
+            <h3 class="feature__title">Fast<br>Turnaround</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-design"/></svg></span>
+            <h3 class="feature__title">Free Design<br>Support</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-chat"/></svg></span>
+            <h3 class="feature__title">Responsive Chat<br>Support</h3>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg aria-hidden="true"><use href="#icon-reorder"/></svg></span>
+            <h3 class="feature__title">Easy<br>reordering</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SEO CONTENT ================= -->
+    <div class="container container--wide content">
+      <section class="content__block">
+        <h2 class="content__title">Custom Printed Boxes For Retail, E-Commerce</h2>
+        <p>
+          Create an unboxing experience your customers remember. Custom boxes help brands present their products
+          professionally while keeping them safe and secure. From small businesses to growing enterprises, our custom
+          printed boxes suit all types of products.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block">
+        <h2 class="content__title">Custom Boxes To Boost Your Brand Impact</h2>
+        <p>
+          Are you looking for a way to boost your product sales? Custom boxes can help. Today, having a great product
+          is not enough. Your packaging also needs to look professional, branded, and appealing to customers.
+        </p>
+        <p>
+          You can advertise your brand through custom-made boxes by printing your logo and branded artwork on them.
+          This helps customers remember your brand with every purchase. Not only that, but branded custom boxes also
+          help your products get the attention they deserve on retail shelves and during unboxing.
+        </p>
+      </section>
+
+      <section class="content__block content__block--last">
+        <h2 class="content__title">Design Tips for The Perfect Custom Box</h2>
+        <p>
+          Designing the perfect custom boxes requires attention to detail. When designing your boxes, there are several
+          steps that you must follow to achieve the best result possible:
+        </p>
+        <ul class="content__list">
+          <li><strong>Understand Your Product:</strong> Start by considering the product's size, weight, shape, and protection needs before designing the box.</li>
+          <li><strong>Choose the Right Material:</strong> Select a packaging material that provides enough protection and suits your product.</li>
+          <li><strong>Add Your Brand Elements:</strong> Use your logo, brand colors, artwork, and other details to make the packaging easy to recognize.</li>
+          <li><strong>Consider Sustainability:</strong> Choose recyclable, reusable, or responsibly sourced packaging options when they fit your product and business needs.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ================= BOX OPTIONS (TABS) ================= -->
+    <section class="options" aria-labelledby="options-title">
+      <div class="container container--options">
+        <h2 class="visually-hidden" id="options-title">Box Options</h2>
+
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Box options">
+            <button class="tabs__tab" type="button" role="tab" id="tab-materials" aria-controls="panel-materials" aria-selected="true">Materials</button>
+            <button class="tabs__tab" type="button" role="tab" id="tab-thickness" aria-controls="panel-thickness" aria-selected="false" tabindex="-1">Material Thickness</button>
+            <button class="tabs__tab" type="button" role="tab" id="tab-sides" aria-controls="panel-sides" aria-selected="false" tabindex="-1">Printing Sides</button>
+            <button class="tabs__tab" type="button" role="tab" id="tab-printing" aria-controls="panel-printing" aria-selected="false" tabindex="-1">Printing Options</button>
+            <button class="tabs__tab" type="button" role="tab" id="tab-finishing" aria-controls="panel-finishing" aria-selected="false" tabindex="-1">Finishing</button>
+          </div>
+
+          <!-- Materials -->
+          <div class="tabs__panel" role="tabpanel" id="panel-materials" aria-labelledby="tab-materials" tabindex="0">
+            <ul class="option-grid">
+              <li class="option-card">
+                <img class="option-card__img" src="images/materials/cardboard.svg" alt="" width="400" height="250" loading="lazy">
+                <h3 class="option-card__title">Cardboard</h3>
+                <p class="option-card__text">Lightweight, printable, and cost-effective for custom apparel boxes.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Lightweight</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>High Print Quality</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Budget Friendly</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <img class="option-card__img" src="images/materials/corrugated.svg" alt="" width="400" height="250" loading="lazy">
+                <h3 class="option-card__title">Corrugated Cardboard</h3>
+                <p class="option-card__text">Strong, protective, and ideal for shipping apparel safely.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-shield"/></svg>High Strength</li>
+                  <li><svg aria-hidden="true"><use href="#icon-box"/></svg>Impact Protection</li>
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Recyclable</li>
+                </ul>
+              </li>
+              <li class="option-card option-card--premium">
+                <span class="option-card__badge"><svg aria-hidden="true"><use href="#icon-crown"/></svg>Premium Choice</span>
+                <img class="option-card__img" src="images/materials/rigid.svg" alt="" width="400" height="250" loading="lazy">
+                <h3 class="option-card__title">Rigid Stock</h3>
+                <p class="option-card__text">Thick, durable, and luxurious, perfect for high-end apparel packaging.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Luxury Look</li>
+                  <li><svg aria-hidden="true"><use href="#icon-shield-check"/></svg>Extra Durability</li>
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Long Lasting</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <img class="option-card__img" src="images/materials/kraft.svg" alt="" width="400" height="250" loading="lazy">
+                <h3 class="option-card__title">Kraft Stock</h3>
+                <p class="option-card__text">Eco-friendly, natural, and a great choice for sustainable apparel packaging.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Eco-Friendly</li>
+                  <li><svg aria-hidden="true"><use href="#icon-recycle"/></svg>Recycled Material</li>
+                  <li><svg aria-hidden="true"><use href="#icon-layers"/></svg>Natural Look</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Material Thickness -->
+          <div class="tabs__panel" role="tabpanel" id="panel-thickness" aria-labelledby="tab-thickness" tabindex="0" hidden>
+            <ul class="option-grid">
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-layers"/></svg></span>
+                <h3 class="option-card__title">14pt Cardstock</h3>
+                <p class="option-card__text">Thin and flexible, ideal for lightweight retail items.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Lightweight</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Smooth Print</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Budget Friendly</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-layers"/></svg></span>
+                <h3 class="option-card__title">18pt Cardstock</h3>
+                <p class="option-card__text">A sturdier board that holds its shape for heavier retail products.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-shield"/></svg>Sturdy</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Smooth Print</li>
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Recyclable</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-box"/></svg></span>
+                <h3 class="option-card__title">E-Flute Corrugated</h3>
+                <p class="option-card__text">A thin corrugated layer that adds strength without bulk, the standard for mailer boxes.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-shield"/></svg>High Strength</li>
+                  <li><svg aria-hidden="true"><use href="#icon-box"/></svg>Impact Protection</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Printable</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-box"/></svg></span>
+                <h3 class="option-card__title">B-Flute Corrugated</h3>
+                <p class="option-card__text">Thicker flutes for extra cushioning on heavy or fragile shipments.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-shield-check"/></svg>Extra Durability</li>
+                  <li><svg aria-hidden="true"><use href="#icon-box"/></svg>Impact Protection</li>
+                  <li><svg aria-hidden="true"><use href="#icon-layers"/></svg>Stackable</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Printing Sides -->
+          <div class="tabs__panel" role="tabpanel" id="panel-sides" aria-labelledby="tab-sides" tabindex="0" hidden>
+            <ul class="option-grid">
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-box"/></svg></span>
+                <h3 class="option-card__title">Outside Print</h3>
+                <p class="option-card__text">Your branding on the outside, so it stands out in transit and on shelves.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Brand Visibility</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Full Color</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Budget Friendly</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-sparkle"/></svg></span>
+                <h3 class="option-card__title">Inside Print</h3>
+                <p class="option-card__text">A hidden message, pattern, or thank-you note for a memorable unboxing.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Surprise Reveal</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Full Color</li>
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Shareable</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-diamond"/></svg></span>
+                <h3 class="option-card__title">Both Sides</h3>
+                <p class="option-card__text">Print inside and out for a complete branded experience.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Premium Feel</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Full Color</li>
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Maximum Impact</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-leaf"/></svg></span>
+                <h3 class="option-card__title">Plain (No Print)</h3>
+                <p class="option-card__text">Unprinted boxes for a clean, minimal look at the lowest cost.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Lowest Cost</li>
+                  <li><svg aria-hidden="true"><use href="#icon-box"/></svg>Quick Production</li>
+                  <li><svg aria-hidden="true"><use href="#icon-leaf"/></svg>Minimal Look</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Printing Options -->
+          <div class="tabs__panel" role="tabpanel" id="panel-printing" aria-labelledby="tab-printing" tabindex="0" hidden>
+            <ul class="option-grid">
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-printer"/></svg></span>
+                <h3 class="option-card__title">CMYK Printing</h3>
+                <p class="option-card__text">Full-color printing for photos, gradients, and detailed artwork.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Full Color</li>
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Rich Detail</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Cost Effective</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-star"/></svg></span>
+                <h3 class="option-card__title">PMS (Pantone) Colors</h3>
+                <p class="option-card__text">Exact spot colors that keep your brand colors consistent on every order.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Exact Match</li>
+                  <li><svg aria-hidden="true"><use href="#icon-shield-check"/></svg>Consistent</li>
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Brand Accurate</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-printer"/></svg></span>
+                <h3 class="option-card__title">Digital Printing</h3>
+                <p class="option-card__text">Cost-effective for short runs and quick turnarounds, with no printing plates needed.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Short Runs</li>
+                  <li><svg aria-hidden="true"><use href="#icon-box"/></svg>Fast Setup</li>
+                  <li><svg aria-hidden="true"><use href="#icon-printer"/></svg>Full Color</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-layers"/></svg></span>
+                <h3 class="option-card__title">Offset Printing</h3>
+                <p class="option-card__text">Sharp, consistent results that become more cost-effective at larger quantities.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Sharp Detail</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Bulk Savings</li>
+                  <li><svg aria-hidden="true"><use href="#icon-shield-check"/></svg>Consistent</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Finishing -->
+          <div class="tabs__panel" role="tabpanel" id="panel-finishing" aria-labelledby="tab-finishing" tabindex="0" hidden>
+            <ul class="option-grid">
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-layers"/></svg></span>
+                <h3 class="option-card__title">Matte Lamination</h3>
+                <p class="option-card__text">A smooth, non-reflective finish with a soft, modern feel.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Elegant Look</li>
+                  <li><svg aria-hidden="true"><use href="#icon-shield"/></svg>Scuff Resistant</li>
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>No Glare</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-sparkle"/></svg></span>
+                <h3 class="option-card__title">Gloss Lamination</h3>
+                <p class="option-card__text">A shiny finish that makes colors pop and protects the print.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Vibrant Colors</li>
+                  <li><svg aria-hidden="true"><use href="#icon-shield"/></svg>Protective</li>
+                  <li><svg aria-hidden="true"><use href="#icon-coins"/></svg>Budget Friendly</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-star"/></svg></span>
+                <h3 class="option-card__title">Spot UV</h3>
+                <p class="option-card__text">A glossy coating on selected areas to highlight your logo and details.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Logo Highlight</li>
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Premium Feel</li>
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Eye-Catching</li>
+                </ul>
+              </li>
+              <li class="option-card">
+                <span class="option-card__visual"><svg aria-hidden="true"><use href="#icon-crown"/></svg></span>
+                <h3 class="option-card__title">Foil Stamping</h3>
+                <p class="option-card__text">Metallic gold, silver, or colored foil for a luxury touch.</p>
+                <ul class="option-card__features">
+                  <li><svg aria-hidden="true"><use href="#icon-diamond"/></svg>Luxury Look</li>
+                  <li><svg aria-hidden="true"><use href="#icon-sparkle"/></svg>Metallic Shine</li>
+                  <li><svg aria-hidden="true"><use href="#icon-star"/></svg>Memorable</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="container container--mid">
+        <div class="section-head section-head--center">
+          <h2 class="section-head__title" id="faq-title">Frequently <span class="text-accent">Asked</span> Questions</h2>
+          <p class="section-head__text">We've answered all the common questions you may have before ordering custom boxes.</p>
+        </div>
+
+        <div class="faq__grid">
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>What are custom boxes?</summary>
+            <div class="faq__answer"><p>Custom boxes are specialized containers that help to advertise, protect, and ship your products effectively. You can print them with your branded artwork and custom logo to strengthen your brand identity.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>How do I know which box size I need for my custom box?</summary>
+            <div class="faq__answer"><p>To determine your box size, measure your product from the widest side for the width, the longest side for the length, and the tallest side for the height. Once you have these measurements, add a few inches (e.g., 0.25 inches) to allow room for fit and any packaging fillers. You can also read our full guide on measuring your box dimensions for a better understanding.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>What are the most popular types of custom boxes?</summary>
+            <div class="faq__answer"><p>The popular and common types of custom boxes are as follows: folding cartons for retail products, mailer boxes for shipping ecommerce products, and rigid boxes for showcasing and protecting luxury or premium items.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Which custom box is perfect for shipping ecommerce items?</summary>
+            <div class="faq__answer"><p>For shipping ecommerce items, custom boxes made from corrugated materials are the best choice. The most popular choice for shipping ecommerce products is a mailer box, as it is made from corrugated materials and can protect your product while leaving a lasting impression with each delivery.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Can I order a sample of my custom box?</summary>
+            <div class="faq__answer"><p>Absolutely. You can order a sample of your custom box to check the material quality, printing, finishing, and size. If you are satisfied with the result, we will start manufacturing the rest of your order.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>How does ordering custom boxes benefit my small business?</summary>
+            <div class="faq__answer"><p>Ordering custom boxes from Pack Legacy can benefit your small business. We offer no minimum order, no setup fees, and no die-plate charges, making it cost-effective and easy for small businesses to order from us.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Which sides are printable on my box?</summary>
+            <div class="faq__answer"><p>Printing sides of your box is fully customizable. You can choose where you want your artwork printed, such as the inside, outside, or both sides. If you need a plain custom box, we can provide that too.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Do you also offer custom box inserts?</summary>
+            <div class="faq__answer"><p>Yes. We do offer custom box inserts, such as EVA foam inserts, cardboard inserts, corrugated box dividers, and packaging card inserts. You can customize your box insert size as per your product size requirements.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>How much do custom boxes cost?</summary>
+            <div class="faq__answer"><p>The pricing of custom boxes depends upon various factors, including size, material, style, and design complexity. Also, there is no extra charge for any additional color prints.</p></div>
+          </details>
+          <details class="faq__item" open>
+            <summary class="faq__question"><svg class="faq__icon" aria-hidden="true"><use href="#icon-layers"/></svg>Can you help me with designing my box artwork?</summary>
+            <div class="faq__answer"><p>Yes. We offer dedicated design support to help you with your custom box artwork. Also, if you require a dieline template for your box, please visit our <a class="link" href="#">free dieline template</a> page.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="container container--mid">
+        <h2 class="section-head__title" id="reviews-title">Customer <span class="text-accent">Reviews</span></h2>
+        <p class="section-head__text">Real feedback from clients who have experienced our services first hand.</p>
+
+        <div class="reviews__grid">
+          <div class="rating-card">
+            <p class="rating-card__score">5.0 <span class="stars" aria-label="5 out of 5 stars">★★★★★</span></p>
+            <p class="rating-card__label">Verified Customer Reviews</p>
+            <ul class="rating-card__logos">
+              <li><svg class="logo-clutch" aria-label="Clutch" role="img"><use href="#logo-clutch"/></svg></li>
+              <li><svg class="logo-bark" aria-label="bark" role="img"><use href="#logo-bark"/></svg></li>
+              <li><svg class="logo-trustpilot" aria-label="Trustpilot" role="img"><use href="#logo-trustpilot"/></svg></li>
+            </ul>
+          </div>
+
+          <figure class="review-card">
+            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="review-card__quote">
+              <p>"Great experience with PL. The communication was excellent, the service was smooth, and my order was shipped right on time. Highly Recommended!"</p>
+            </blockquote>
+            <figcaption class="review-card__author">Clarke Wayne</figcaption>
+          </figure>
+
+          <figure class="review-card">
+            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="review-card__quote">
+              <p>"Really happy with the custom boxes for my beauty brand form Pack Legacy. They look nice and the quality is good."</p>
+            </blockquote>
+            <figcaption class="review-card__author">Carrie Suda</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTAGRAM ================= -->
+    <section class="insta" aria-label="Instagram">
+      <div class="container container--insta">
+        <div class="insta__head">
+          <p class="insta__text">
+            Follow <a href="#" class="insta__handle">Packlegacy</a> on Instagram for ideas and inspiration to make your
+            custom packaging look amazing.
+          </p>
+          <ul class="social">
+            <li><a href="#" aria-label="Pack Legacy on Facebook"><svg aria-hidden="true"><use href="#icon-facebook"/></svg></a></li>
+            <li><a href="#" aria-label="Pack Legacy on Instagram"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a></li>
+          </ul>
+        </div>
+
+        <ul class="insta__grid">
+          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Sage green luxury mailer box on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+          <li><a href="#"><img src="images/products/black-mailer-box.webp" alt="Black mailer box with gold foil logo on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+          <li><a href="#"><img src="images/products/printed-mailer-box.webp" alt="Green printed mailer box with insert card on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+          <li><a href="#"><img src="images/products/window-mailer-box.webp" alt="White window mailer boxes on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+          <li><a href="#"><img src="images/products/luxury-mailer-box.webp" alt="Luxury mailer box with tissue paper on Instagram" width="650" height="650" loading="lazy" decoding="async"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="container container--mid cta-wrap">
+      <div class="cta">
+        <div>
+          <h2 class="cta__title">Can't Find the Right Custom Box?</h2>
+          <p class="cta__text">
+            Need something specific? Fill out the form and our team will create a custom box solution that's made to fit
+            your product — perfectly.
+          </p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn" href="#quote-form">Get A Quote</a>
+          <a class="btn btn--outline" href="#">View All Blogs</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container container--footer">
+      <div class="footer-top">
+        <a href="/" class="logo" aria-label="Pack Legacy home">
+          <img src="images/logos/Pack-legacy-Logo-1024x216.webp" alt="Pack Legacy" width="220" height="46" loading="lazy">
+        </a>
+        <div class="ai-says">
+          <p class="ai-says__title">What <span class="text-accent">AI</span> says about us</p>
+          <ul class="ai-says__list">
+            <li><a href="#" aria-label="Ask ChatGPT about Pack Legacy"><svg aria-hidden="true"><use href="#ai-chatgpt"/></svg></a></li>
+            <li><a href="#" aria-label="Ask Perplexity about Pack Legacy"><svg aria-hidden="true"><use href="#ai-perplexity"/></svg></a></li>
+            <li><a href="#" aria-label="Ask Gemini about Pack Legacy"><svg aria-hidden="true"><use href="#ai-gemini"/></svg></a></li>
+            <li><a href="#" aria-label="Ask Brave about Pack Legacy"><svg aria-hidden="true"><use href="#ai-brave"/></svg></a></li>
+            <li><a href="#" aria-label="Ask Bing Copilot about Pack Legacy"><svg aria-hidden="true"><use href="#ai-bing"/></svg></a></li>
+            <li><a href="#" aria-label="Ask Grok about Pack Legacy"><svg aria-hidden="true"><use href="#ai-grok"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-contact">
+          <ul>
+            <li class="no-icon"><a href="mailto:sales@packlegacy.com">sales@packlegacy.com</a></li>
+            <li><svg aria-hidden="true"><use href="#icon-phone"/></svg><a href="tel:+14243216460">+1 (424) 321-6460</a></li>
+            <li class="no-icon"><address>520 Vetterlein Ave Hamilton Township,<br>NJ 08619, USA</address></li>
+          </ul>
+          <p class="footer-contact__follow">Follow us:</p>
+        </div>
+
+        <nav class="footer-col" aria-labelledby="footer-company">
+          <h2 class="footer-col__title" id="footer-company">Company</h2>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Sample Kits</a></li>
+            <li><a href="#">Free Dieline Templates</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-labelledby="footer-help">
+          <h2 class="footer-col__title" id="footer-help">Help</h2>
+          <ul>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">How To Order</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Track Your Order</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-labelledby="footer-policies">
+          <h2 class="footer-col__title" id="footer-policies">Policies</h2>
+          <ul>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy;2026, <strong>Pack Legacy.</strong> All Rights Reserved.</p>
+        <ul class="payments" aria-label="Accepted payment methods">
+          <li class="payments__visa">VISA</li>
+          <li class="payments__skrill">Skrill</li>
+          <li class="payments__paypal">Pay<span>Pal</span></li>
+          <li class="payments__mastercard"><span class="visually-hidden">Mastercard</span><svg viewBox="0 0 32 20" aria-hidden="true"><circle cx="11" cy="10" r="8" fill="#eb001b"/><circle cx="21" cy="10" r="8" fill="#f79e1b" fill-opacity=".9"/></svg></li>
+          <li class="payments__klarna">Klarna.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ structured data: lets Google show these Q&As as rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What are custom boxes?", "acceptedAnswer": { "@type": "Answer", "text": "Custom boxes are specialized containers that help to advertise, protect, and ship your products effectively. You can print them with your branded artwork and custom logo to strengthen your brand identity." } },
+      { "@type": "Question", "name": "How do I know which box size I need for my custom box?", "acceptedAnswer": { "@type": "Answer", "text": "To determine your box size, measure your product from the widest side for the width, the longest side for the length, and the tallest side for the height. Once you have these measurements, add a few inches (e.g., 0.25 inches) to allow room for fit and any packaging fillers." } },
+      { "@type": "Question", "name": "What are the most popular types of custom boxes?", "acceptedAnswer": { "@type": "Answer", "text": "The popular and common types of custom boxes are folding cartons for retail products, mailer boxes for shipping ecommerce products, and rigid boxes for showcasing and protecting luxury or premium items." } },
+      { "@type": "Question", "name": "Which custom box is perfect for shipping ecommerce items?", "acceptedAnswer": { "@type": "Answer", "text": "For shipping ecommerce items, custom boxes made from corrugated materials are the best choice. The most popular choice is a mailer box, as it is made from corrugated materials and can protect your product while leaving a lasting impression with each delivery." } },
+      { "@type": "Question", "name": "Can I order a sample of my custom box?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. You can order a sample of your custom box to check the material quality, printing, finishing, and size. If you are satisfied with the result, we will start manufacturing the rest of your order." } },
+      { "@type": "Question", "name": "How does ordering custom boxes benefit my small business?", "acceptedAnswer": { "@type": "Answer", "text": "Pack Legacy offers no minimum order, no setup fees, and no die-plate charges, making it cost-effective and easy for small businesses to order custom boxes." } },
+      { "@type": "Question", "name": "Which sides are printable on my box?", "acceptedAnswer": { "@type": "Answer", "text": "Printing sides of your box is fully customizable. You can choose where you want your artwork printed, such as the inside, outside, or both sides. If you need a plain custom box, we can provide that too." } },
+      { "@type": "Question", "name": "Do you also offer custom box inserts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer custom box inserts, such as EVA foam inserts, cardboard inserts, corrugated box dividers, and packaging card inserts, sized to your product requirements." } },
+      { "@type": "Question", "name": "How much do custom boxes cost?", "acceptedAnswer": { "@type": "Answer", "text": "The pricing of custom boxes depends upon various factors, including size, material, style, and design complexity. There is no extra charge for any additional color prints." } },
+      { "@type": "Question", "name": "Can you help me with designing my box artwork?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer dedicated design support to help you with your custom box artwork, and a free dieline template for your box." } }
+    ]
+  }
+  </script>
+
+</body>
+</html>
